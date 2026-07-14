@@ -27,10 +27,10 @@ function AboutSection() {
           <Image
             src={`${BASE_PATH}${personalData.profile}`}
             width={280}
-            height={280}
+            height={316}
             alt={personalData.name}
             className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
-            style={{ width: 'auto', height: 'auto' }}
+            style={{ width: '280px', height: 'auto' }}
           />
         </div>
       </div>

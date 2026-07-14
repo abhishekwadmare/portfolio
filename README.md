@@ -34,7 +34,8 @@ The original template's contact form posted to a Nodemailer/Telegram API route, 
 
 Without those secrets configured, the form falls back to opening a `mailto:` link instead.
 
-## Known placeholders
+## Static assets
 
-- `public/profile.svg` is a generated initials placeholder — swap in a real photo.
-- `public/resume.html` is a static HTML transcription of the resume — swap in a PDF and update `personalData.resume` if preferred.
+- `public/profile.png` — profile photo, cropped for a head/shoulders portrait.
+- `public/resume.pdf` — the actual resume, linked from the hero section's "Get Resume" button.
+- `public/logos/` — company/institution logos for the Experience and Education sections.
