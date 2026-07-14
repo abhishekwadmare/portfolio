@@ -1,5 +1,6 @@
 // @flow strict
 
+import { BASE_PATH } from "@/utils/base-path";
 import { personalData } from "@/utils/data/personal-data";
 import Image from "next/image";
 
@@ -24,7 +25,7 @@ function AboutSection() {
         </div>
         <div className="flex justify-center order-1 lg:order-2">
           <Image
-            src={personalData.profile}
+            src={`${BASE_PATH}${personalData.profile}`}
             width={280}
             height={280}
             alt={personalData.name}

@@ -1,6 +1,8 @@
 // @flow strict
+import { BASE_PATH } from "@/utils/base-path";
 import { educations } from "@/utils/data/educations";
 import Image from "next/image";
+import Link from "next/link";
 import { BsPersonWorkspace } from "react-icons/bs";
 import lottieFile from '../../../assets/lottie/study.json';
 import AnimationLottie from "../../helper/animation-lottie";
@@ -10,7 +12,7 @@ function Education() {
   return (
     <div id="education" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
       <Image
-        src="/section.svg"
+        src={`${BASE_PATH}/section.svg`}
         alt="Hero"
         width={1572}
         height={795}
@@ -48,7 +50,7 @@ function Education() {
                   <GlowCard key={education.id} identifier={`education-${education.id}`}>
                     <div className="p-3 relative text-white">
                       <Image
-                        src="/blur-23.svg"
+                        src={`${BASE_PATH}/blur-23.svg`}
                         alt="Hero"
                         width={1080}
                         height={200}
@@ -60,9 +62,27 @@ function Education() {
                         </p>
                       </div>
                       <div className="flex items-center gap-x-8 px-3 py-5">
-                        <div className="text-violet-500  transition-all duration-300 hover:scale-125">
-                          <BsPersonWorkspace size={36} />
-                        </div>
+                        {education.logo ? (
+                          <Link
+                            href={education.link}
+                            target="_blank"
+                            aria-label={education.institution}
+                            className="shrink-0 w-14 h-14 bg-white rounded-lg p-2 flex items-center justify-center transition-all duration-300 hover:scale-110"
+                          >
+                            <Image
+                              src={`${BASE_PATH}${education.logo}`}
+                              alt={education.institution}
+                              width={56}
+                              height={56}
+                              className="w-full h-full object-contain"
+                              unoptimized
+                            />
+                          </Link>
+                        ) : (
+                          <div className="text-violet-500  transition-all duration-300 hover:scale-125">
+                            <BsPersonWorkspace size={36} />
+                          </div>
+                        )}
                         <div>
                           <p className="text-base sm:text-xl mb-2 font-medium uppercase">
                             {education.title}

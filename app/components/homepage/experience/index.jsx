@@ -1,7 +1,9 @@
 // @flow strict
 
+import { BASE_PATH } from "@/utils/base-path";
 import { experiences } from "@/utils/data/experience";
 import Image from "next/image";
+import Link from "next/link";
 import { BsPersonWorkspace } from "react-icons/bs";
 import experience from '../../../assets/lottie/code.json';
 import AnimationLottie from "../../helper/animation-lottie";
@@ -11,7 +13,7 @@ function Experience() {
   return (
     <div id="experience" className="relative z-50 border-t my-12 lg:my-24 border-[#25213b]">
       <Image
-        src="/section.svg"
+        src={`${BASE_PATH}/section.svg`}
         alt="Hero"
         width={1572}
         height={795}
@@ -44,7 +46,7 @@ function Experience() {
                   <GlowCard key={experience.id} identifier={`experience-${experience.id}`}>
                     <div className="p-3 relative">
                       <Image
-                        src="/blur-23.svg"
+                        src={`${BASE_PATH}/blur-23.svg`}
                         alt="Hero"
                         width={1080}
                         height={200}
@@ -56,9 +58,27 @@ function Experience() {
                         </p>
                       </div>
                       <div className="flex items-center gap-x-8 px-3 py-5">
-                        <div className="text-violet-500  transition-all duration-300 hover:scale-125">
-                          <BsPersonWorkspace size={36} />
-                        </div>
+                        {experience.logo ? (
+                          <Link
+                            href={experience.link}
+                            target="_blank"
+                            aria-label={experience.company}
+                            className="shrink-0 w-14 h-14 bg-white rounded-lg p-2 flex items-center justify-center transition-all duration-300 hover:scale-110"
+                          >
+                            <Image
+                              src={`${BASE_PATH}${experience.logo}`}
+                              alt={experience.company}
+                              width={56}
+                              height={56}
+                              className="w-full h-full object-contain"
+                              unoptimized
+                            />
+                          </Link>
+                        ) : (
+                          <div className="text-violet-500  transition-all duration-300 hover:scale-125">
+                            <BsPersonWorkspace size={36} />
+                          </div>
+                        )}
                         <div>
                           <p className="text-base sm:text-xl mb-2 font-medium uppercase">
                             {experience.title}

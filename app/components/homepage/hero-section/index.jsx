@@ -1,5 +1,6 @@
 // @flow strict
 
+import { BASE_PATH } from "@/utils/base-path";
 import { personalData } from "@/utils/data/personal-data";
 import { skillsData } from "@/utils/data/skills";
 import Image from "next/image";
@@ -15,7 +16,7 @@ function HeroSection() {
   return (
     <section className="relative flex flex-col items-center justify-between py-4 lg:py-12">
       <Image
-        src="/hero.svg"
+        src={`${BASE_PATH}/hero.svg`}
         alt="Hero"
         width={1572}
         height={795}
