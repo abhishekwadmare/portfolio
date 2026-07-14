@@ -17,7 +17,7 @@ export const projectsData = [
         role: 'Creator',
         code: 'https://github.com/abhishekwadmare/AWS-Exam-practice',
         demo: 'https://abhishekwadmare.github.io/AWS-Exam-practice/',
-        image: 'https://opengraph.githubassets.com/2918ed3c879c194878efbc6920308d5447584f926509d0afcc6d3dbccc03cd42/abhishekwadmare/AWS-Exam-practice',
+        image: 'https://raw.githubusercontent.com/abhishekwadmare/AWS-Exam-practice/main/docs/screenshots/portal.jpg',
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ export const projectsData = [
         role: 'Full Stack Developer',
         code: 'https://github.com/abhishekwadmare/Agro_CheckMake',
         demo: 'https://abhishekwadmare.github.io/Agro_CheckMake/',
-        image: 'https://opengraph.githubassets.com/530e4a8fd5560f6d46f57825f70e06cc6b83c7ad30cb4b511553792b22dca17e/abhishekwadmare/Agro_CheckMake',
+        image: 'https://raw.githubusercontent.com/abhishekwadmare/Agro_CheckMake/master/docs/screenshots/home.jpg',
     },
     {
         id: 4,
