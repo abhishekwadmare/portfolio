@@ -1,0 +1,76 @@
+export const projectsData = [
+    {
+        id: 1,
+        name: 'Agastya - Job Alert System',
+        description: "Self-hosted job alert system that monitors company career pages directly and notifies you the moment a new role is posted. No third-party job boards, no noise.",
+        tools: ['JavaScript', 'Node.js', 'Web Scraping', 'GitHub Actions'],
+        role: 'Creator',
+        code: 'https://github.com/abhishekwadmare/agastya',
+        demo: 'https://abhishekwadmare.github.io/agastya/',
+        image: 'https://raw.githubusercontent.com/abhishekwadmare/agastya/main/docs/screenshots/jobs.png',
+    },
+    {
+        id: 2,
+        name: 'AWS Cloud Practitioner Exam Portal',
+        description: "Browser-only AWS Certified Cloud Practitioner (CLF-C02) practice exam portal: 6 full exams and a searchable question bank with domain-based scoring, no backend or server, built with React, Vite, and Tailwind CSS, deployed on GitHub Pages.",
+        tools: ['React', 'Vite', 'Tailwind CSS', 'Vitest'],
+        role: 'Creator',
+        code: 'https://github.com/abhishekwadmare/AWS-Exam-practice',
+        demo: 'https://abhishekwadmare.github.io/AWS-Exam-practice/',
+        image: 'https://opengraph.githubassets.com/2918ed3c879c194878efbc6920308d5447584f926509d0afcc6d3dbccc03cd42/abhishekwadmare/AWS-Exam-practice',
+    },
+    {
+        id: 3,
+        name: 'Agro CheckMake',
+        description: 'A system for connecting farmers with buyers, achieved by integrating a website, an Android application, and an IoT kit.',
+        tools: ['HTML', 'PHP', 'MySQL', 'IoT', 'Android'],
+        role: 'Full Stack Developer',
+        code: 'https://github.com/abhishekwadmare/Agro_CheckMake',
+        demo: 'https://abhishekwadmare.github.io/Agro_CheckMake/',
+        image: 'https://opengraph.githubassets.com/530e4a8fd5560f6d46f57825f70e06cc6b83c7ad30cb4b511553792b22dca17e/abhishekwadmare/Agro_CheckMake',
+    },
+    {
+        id: 4,
+        name: 'Backgammon Engine',
+        description: "Text-based Backgammon engine in Java with the full ruleset, including the doubling cube, bar, pip counting, and a hint system. Built as a Software Engineering group project.",
+        tools: ['Java'],
+        role: 'Software Engineer',
+        code: 'https://github.com/abhishekwadmare/Group_29_Backgammon',
+        demo: '',
+        image: 'https://github.com/user-attachments/assets/031d601b-f18e-4458-9b5e-2bebfe62562e',
+    },
+    {
+        id: 5,
+        name: "Simon's Obstacle Course",
+        description: 'Java implementation of the classic Simon memory game.',
+        tools: ['Java'],
+        role: 'Creator',
+        code: 'https://github.com/abhishekwadmare/SimonsObstacleCourse',
+        demo: '',
+        image: 'https://github.com/abhishekwadmare/SimonsObstacleCourse/assets/47171897/586527c0-f276-4e9c-bf8b-70ce62bb67f6',
+    },
+    {
+        id: 6,
+        name: 'Blog CMS',
+        description: 'PHP + MySQL blog CMS with a public front-end and an admin dashboard for posts, categories, comments, and users.',
+        tools: ['PHP', 'MySQL', 'JavaScript'],
+        role: 'Backend Developer',
+        code: 'https://github.com/abhishekwadmare/cms',
+        demo: '',
+        image: 'https://opengraph.githubassets.com/c5df0a7625c5413f5dd4e8edee1db37805f3c5eebc0406e0e7d03c60db95dc87/abhishekwadmare/cms',
+    },
+];
+
+
+// Do not remove any property.
+// Leave it blank instead as shown below
+
+// {
+//     id: 1,
+//     name: '',
+//     description: "",
+//     tools: [],
+//     role: '',
+//     code: '',
+//     demo: '',
+// },
